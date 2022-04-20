@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <script src="./create_user.js"></script>
+  </head>
+
+  <body>
+    <form id="inputForm">
+      <div>
+        <!--
+            Label bruges til at sætte tekst foran input feldtet.
+            for bruges til at referere til et inputs ID (skal være 1:1 med ID)
+        -->
+        <label for="firstName">First name</label>
+        <!--
+            input bruges til at brugeren kan indsætte information
+            ID bruges til at kunne referere til inputtet
+            Name bruges til at kunne ?
+            type angiver hvilken type der accepteres i input.
+            Value bruges til at sætte en standart værdi (skal nok slettes når vi vil ikke skal teste mere)
+            Placeholder bruges til at kunne give et eksempel til brugeren.
+            required angiver at inputet skal udfyldes
+        -->
+        <input
+          id="firstName"
+          name="FirstName"
+          type="text"
+          value="test"
+          placeholder="Inter first name"
+          required
+        />
+      </div>
+      <p></p>
+      <div>
+        <label for="lastName">Last name</label>
+        <input
+          id="lastName"
+          name="LastName"
+          type="text"
+          value="test"
+          placeholder="Inter last name"
+          required
+        />
+      </div>
+    
+      <p></p>
+      <div>
+        <label for="email">Email</label>
+        <!--
+            type = email bruges til at sikre at der indsættes en rigtig email
+        --> 
+        <input
+          id="email"
+          name="Email"
+          type="email"
+          value="test@test.com"
+          placeholder="Inter email"
+          required
+        />
+      </div>
+      <p></p>
+      <div>
+        <label for="password">Password</label>
+        <!--
+            type = password bruges til at lave "*"" istedet for "koden"
+        -->
+        <input
+          id="password"
+          name="Password"
+          type="password"
+          value="test"
+          placeholder="Inter password"
+          required
+        />
+      </div>
+      <p></p>
+      
+      <button type="reset">Reset</button> <!-- 
+          denne knap sætter alt tilbage til defult. hvis der er sat en value bruges denne
+        -->
+      <button type="submit" onclick="location.href='login.html';">Opret</button> <!--
+          udfører selve formen med de indsatte oplysninger fra de forskellige inputs
+      -->
+    </form>
+  </body>
+</html>

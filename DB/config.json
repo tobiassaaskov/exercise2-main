@@ -1,0 +1,17 @@
+{
+  "server": "gruppe8.database.windows.net",
+  "authentication": {
+    "type": "default",
+    "options": {
+      "userName": "Gruppe8",
+      "password": "DetteErEnKode1"
+    }
+  },
+  "options": {
+    "encrypt": true,
+    "enableArithAbort": true,
+    "trustServerCertificate": true,
+    "database": "test",
+    "rowCollectionOnDone": true
+  }
+}
